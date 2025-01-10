@@ -8,7 +8,7 @@ public class Button extends NodeCreator {
 	String areaLabel = "";
 	@Override
 	public String createPairNode(){
-		return "<"+this.Tag+classStyle+style+id+width+height+hxGet+hxInclude+hxTarget+hxTrigger+disable+areaLabel+" >"+ this.content   + "</"+this.Tag+">";
+		return "<"+this.Tag+classStyle+style+id+width+height+hxGet+hxVals+hxInclude+hxTarget+hxTrigger+disable+areaLabel+" >"+ this.content   + "</"+this.Tag+">";
 	}
 
 	public void toggleButtonDisable() {

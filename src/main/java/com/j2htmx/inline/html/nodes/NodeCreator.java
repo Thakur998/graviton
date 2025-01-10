@@ -59,7 +59,7 @@ public class NodeCreator extends CSSLoader {
 	}
 
 	public void setHxVals(String target) {
-		this.hxTarget = " hx-vals = "+target;
+		this.hxVals = " hx-vals = "+target;
 	}
 
 	public Object getClientId() {
@@ -122,6 +122,11 @@ public class NodeCreator extends CSSLoader {
 		this.style=" style='"+getProperty(styleClass)+"' ";
 		addedStyles.add(getProperty(styleClass));
 	}
+
+	public void setStyleViaString(String styleClass) {
+		this.style=styleClass;
+	}
+
 
 	public void setClass(String styleClass) {
 		this.classStyle=" class='"+styleClass+"' ";
